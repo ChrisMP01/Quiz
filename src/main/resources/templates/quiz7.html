@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<!--Implementación de css en formulario.-->
+		<!--<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>-->
+	</head>
+	<body>
+		<form th:action="@{/quiz7}" method="post">
+			<fieldset>
+				<legend>Pregunta 7:</legend>
+				<p>¿Cómo se llama esta bebida típica de la India?Se conoce por ser refrescante y porque además de fruta,
+ su base es de yogur, ya sea salado o dulce.</p>
+				<p><input type="radio" name="qz7" value="panipuri">1: Pani Puri</p>
+				<p><input type="radio" name="qz7" value="lassi">2: Lassi</p><!--correcto-->
+				<p><input type="radio" name="qz7" value="colada">3: Piña colada</p>
+				<p><input type="radio" name="qz7" value="rosemilk">4: Rose milk</p>
+				<p><input type="submit" name="Enviar"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>

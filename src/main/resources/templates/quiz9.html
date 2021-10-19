@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<!--Implementación de css en formulario.-->
+		<!--<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>-->
+	</head>
+	<body>
+		<form th:action="@{/quiz9}" method="post">
+			<fieldset>
+				<legend>Pregunta 9:</legend>
+				<p>¿Qué tipos de arroces se pueden usar para preparar la paella,
+ uno de los platos más importantes de la gastronomía española?</p>
+				<p><input type="radio" name="qz9" value="cvb">1: Carnaroli, vaporizado, bomba</p>
+				<p><input type="radio" name="qz9" value="jsb">2: Japónico, senia, basmati</p>
+				<p><input type="radio" name="qz9" value="vbs">3: Vaporizado, basmati, senia</p>
+				<p><input type="radio" name="qz9" value="sbb">4: Senia, bahía, bomba</p><!--correcto-->
+				<p><input type="submit" name="Enviar"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>

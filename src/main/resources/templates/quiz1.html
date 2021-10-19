@@ -2,12 +2,20 @@
 	<head>
 		<!--Implementación de css en formulario.-->
 		<!--<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>-->
+		<!--enlace del quiz: https://experienciajoven.com/quiz-de-comida/-->
 	</head>
 	<body>
 		<form th:action="@{/quiz1}" method="post">
 			<fieldset>
-				
+				<legend>Pregunta 1:</legend>
+				<p>¿Dónde se inventó la pizza hawaiana?</p>
+				<p><input type="radio" name="qz1" value="1">1:En Hawai</p>
+				<p><input type="radio" name="qz1" value="2">2:En costa Rica</p>
+				<p><input type="radio" name="qz1" value="3">3:En Canadá</p><!--Correcto-->
+				<p><input type="radio" name="qz1" value="4">4:En Estados Unidos</p>
+				<p><input type="submit" name="Enviar"></p>
 			</fieldset>
+				
 		</form>
 	</body>
 </html>

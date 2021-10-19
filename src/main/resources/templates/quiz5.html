@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<!--Implementación de css en formulario.-->
+		<!--<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>-->
+	</head>
+	<body>
+		<form th:action="@{/quiz5}" method="post">
+			<fieldset>
+				<legend>Pregunta 5:</legend>
+				<p>Este plato es un tipo de pasta rellena con carne u otros tipos de relleno.
+				 Además de Italia, ¿qué otro país lo incluye en su menú de comida típica?</p>
+				<p><input type="radio" name="qz5" value="francia">1: Francia</p>
+				<p><input type="radio" name="qz5" value="malta">2: Malta</p><!--Correcto-->
+				<p><input type="radio" name="qz5" value="inglaterra">3: Inglaterra</p>
+				<p><input type="radio" name="qz5" value="dinamarca">4: Dinamarca</p>
+				<p><input type="submit" name="Enviar"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>

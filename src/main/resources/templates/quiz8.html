@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<!--Implementación de css en formulario.-->
+		<!--<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>-->
+	</head>
+	<body>
+		<form th:action="@{/quiz8}" method="post">
+			<fieldset>
+				<legend>Pregunta 8:</legend>
+				<p>Este postre tiene una base de merengue,
+				 con una capa de nata montada acompañada de fresas y arándanos.
+				 Es típico en Nueva Zelanda y Australia. ¿Cuál es su nombre?</p>
+				<p><input type="radio" name="qz8" value="luisa">1: María Luisa</p>
+				<p><input type="radio" name="qz8" value="marta">2: Marta Rocha</p>
+				<p><input type="radio" name="qz8" value="pavlova">3: Anna Pávlova</p><!--correcto-->
+				<p><input type="radio" name="qz8" value="antonieta">4: María Antonieta</p>
+				<p><input type="submit" name="Enviar"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>

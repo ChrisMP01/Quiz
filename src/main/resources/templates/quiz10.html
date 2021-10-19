@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<!--Implementación de css en formulario.-->
+		<!--<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>-->
+	</head>
+	<body>
+		<form th:action="@{/quiz10}" method="post">
+			<fieldset>
+				<legend>Pregunta 10:</legend>
+				<p>¿Qué otro nombre reciben los macarrones con queso en Canadá?</p>
+				<p><input type="radio" name="qz10" value="mcCheese">1: Mac and cheese</p><!--correcto-->
+				<p><input type="radio" name="qz10" value="macaroniAndCheese">2: Macaroni and cheese</p>
+				<p><input type="radio" name="qz10" value="macaronseichons">3: Macaronseichons</p>
+				<p><input type="radio" name="qz10" value="MacaroniCheese">4: Macaroni cheese</p>
+				<p><input type="submit" name="Enviar"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>

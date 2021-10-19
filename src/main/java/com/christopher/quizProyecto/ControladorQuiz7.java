@@ -13,23 +13,20 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class ControladorQuiz1 {
+public class ControladorQuiz7 {
 
-	@GetMapping("quiz1")
-	public String quiz1_get (Model model) {
-		return "quiz1";
-
+	@GetMapping("quiz7")
+	public String process(Model model) {
+		return "quiz7";
 	}
 
-	@PostMapping("quiz1")
-	public String quiz1_post(@RequestParam("qz1") String msg, HttpServletRequest request 
-		 ,HttpSession httpSession) {
-		
-		
+	@PostMapping("quiz7")
+	public String quiz7_post(@RequestParam("qz7") String msg, HttpServletRequest request, HttpSession httpSession) {
+
 		if (msg != null) {
-			httpSession.setAttribute("Quiz1", msg);
+			httpSession.setAttribute("Quiz7", msg);
 		}
-		
-		return "redirect:/quiz2";
+
+		return "redirect:/quiz8";
 	}
 }

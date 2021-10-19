@@ -6,7 +6,13 @@
 	<body>
 		<form th:action="@{/quiz2}" method="post">
 			<fieldset>
-				
+				<legend>Pregunta 2:</legend>
+				<p>¿Cuál es el origen de las patatas a la francesa?</p>
+				<p><input type="radio" name="qz2" value="montreal">1: En Montreal</p>
+				<p><input type="radio" name="qz2" value="belgica">2: En Bélgica</p><!--Correcto-->
+				<p><input type="radio" name="qz2" value="francia">3: En Francia</p>
+				<p><input type="radio" name="qz2" value="eeuu">4: En Estados Unidos</p>
+				<p><input type="submit" name="Enviar"></p>
 			</fieldset>
 		</form>
 	</body>

@@ -1,8 +1,5 @@
 package com.christopher.quizProyecto;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -11,25 +8,24 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
 @Controller
-public class ControladorQuiz1 {
-
-	@GetMapping("quiz1")
-	public String quiz1_get (Model model) {
-		return "quiz1";
+public class ControladorQuiz3 {
+	
+	@GetMapping("quiz3")
+	public String quiz3_get (Model model) {
+		return "quiz3";
 
 	}
 
-	@PostMapping("quiz1")
-	public String quiz1_post(@RequestParam("qz1") String msg, HttpServletRequest request 
-		 ,HttpSession httpSession) {
-		
-		
-		if (msg != null) {
-			httpSession.setAttribute("Quiz1", msg);
+	@PostMapping("quiz3")
+	public String quiz3_post(@RequestParam("qz3") String msg, HttpServletRequest request 
+			 ,HttpSession httpSession) {
+			
+			
+			if (msg != null) {
+				httpSession.setAttribute("Quiz3", msg);
+			}
+			
+			return "redirect:/quiz4";
 		}
-		
-		return "redirect:/quiz2";
-	}
 }

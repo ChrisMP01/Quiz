@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<!--Implementación de css en formulario.-->
+		<!--<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>-->
+	</head>
+	<body>
+		<form th:action="@{/quiz6}" method="post">
+			<fieldset>
+				<legend>Pregunta 6:</legend>
+				<p>Estos deliciosos pasteles asiáticos se conocen con el nombre de...</p>
+				<p><input type="radio" name="qz6" value="jiaozi">1: Jiaozi</p>
+				<p><input type="radio" name="qz6" value="takoyaki">2: Takoyaki</p>
+				<p><input type="radio" name="qz6" value="gyoza">3: Gyoza</p><!--correcto-->
+				<p><input type="radio" name="qz6" value="yakitori">4: Yakitori</p>
+				<p><input type="submit" name="Enviar"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>

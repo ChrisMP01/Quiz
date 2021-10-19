@@ -6,7 +6,13 @@
 	<body>
 		<form th:action="@{/quiz4}" method="post">
 			<fieldset>
-				
+				<legend>Pregunta 4:</legend>
+				<p>¿Qué tipo de licor es este?</p>
+				<p><input type="radio" name="qz4" value="lunar">1: Lunar Leprechaunt</p>
+				<p><input type="radio" name="qz4" value="julep">2: Irish Julep</p>
+				<p><input type="radio" name="qz4" value="martini">3: Martini de manzana</p>
+				<p><input type="radio" name="qz4" value="absenta">4: Absenta</p><!--Correcto-->
+				<p><input type="submit" name="Enviar"></p>
 			</fieldset>
 		</form>
 	</body>

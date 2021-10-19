@@ -6,7 +6,13 @@
 	<body>
 		<form th:action="@{/quiz3}" method="post">
 			<fieldset>
-				
+				<legend>Pregunta 3:</legend>
+				<p>¿Cuál es el nombre de esta comida de América Latina?</p>
+				<p><input type="radio" name="qz3" value="arepuelas">1: Arepuelas</p>
+				<p><input type="radio" name="qz3" value="tacos">2: Tacos</p>
+				<p><input type="radio" name="qz3" value="arepas">3: Arepas</p><!--correcta-->
+				<p><input type="radio" name="qz3" value="tortillas">4: Tortillas</p>
+				<p><input type="submit" name="Enviar"></p>
 			</fieldset>
 		</form>
 	</body>
